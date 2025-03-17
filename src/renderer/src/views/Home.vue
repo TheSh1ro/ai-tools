@@ -210,8 +210,7 @@ function copyPromptText(prompt: PromptClass, event: Event) {
 }
 
 #cards-view.compact .cards {
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 #cards-view.expanded .cards {
@@ -229,14 +228,10 @@ function copyPromptText(prompt: PromptClass, event: Event) {
   flex-direction: column;
 
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-1px);
     box-shadow: 0 8px 20px rgba(105, 56, 197, 0.2);
     background-color: var(--gray-700);
   }
-}
-
-#cards-view.compact .card {
-  height: 200px;
 }
 
 #cards-view.expanded .card {
@@ -266,7 +261,6 @@ function copyPromptText(prompt: PromptClass, event: Event) {
 }
 
 .card-header {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -359,7 +353,7 @@ function copyPromptText(prompt: PromptClass, event: Event) {
 .tag {
   background-color: var(--purple-900);
   color: var(--purple-200);
-  padding: 0.25rem 0.5rem;
+  padding: 0.4rem 0.5rem 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.75rem;
   white-space: nowrap;
