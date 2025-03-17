@@ -1,5 +1,5 @@
 <script setup>
-// const ipcHandle = () => window.electron.ipcRenderer.send('ping')
+// const ipcHanle = () => window.electron.ipcRenderer.send('ping')
 </script>
 
 <template>
